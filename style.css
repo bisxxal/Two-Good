@@ -1,0 +1,419 @@
+@font-face {
+  font-family: Futura;
+  src: url(Futura-Bold.ttf);
+}
+@font-face {
+  font-family: montra;
+  src: url(montrra.ttf);
+}
+:root {
+  background-color: var(#f7f7f7);
+}
+:root {
+  --main-color: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+*::selection {
+  color: white;
+  background-color: black;
+}
+.nav {
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  padding: 1.2vw 1.8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: montra;
+}
+.navpart2 {
+  display: flex;
+}
+.nav .navpart2 .links {
+  padding: 0.8vw 5vw;
+  display: flex;
+  gap: 5vw;
+}
+.icon {
+  padding: 0 2vw;
+  border-radius: 50px;
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5vw;
+  background-color: #ffffff;
+}
+.navpart1 svg {
+  display: block;
+}
+.navpart1 {
+  height: 82px;
+  overflow: hidden;
+}
+.cursor {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(230, 222, 208);
+  border-radius: 50%;
+  position: fixed;
+
+  transform: translate(-50%, -50%) scale(0);
+}
+.page1 {
+  height: 100vh;
+
+  position: relative;
+  width: 100%;
+  padding: 0 1vw;
+  padding: 5vh;
+  padding-top: 20vh;
+}
+.page1 h1 {
+  font-size: 14vw;
+  font-family: Futura;
+  text-align: center;
+  line-height: 12vw;
+  font-weight: 900;
+}
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+}
+.page3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 0 1vw;
+    align-items: center;
+  justify-content: space-between;
+}
+.page2 .elem1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+}
+.elem1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 0.8vw;
+}
+.detilas {
+  height: 50px;
+  width: 58%;
+  z-index: 99;
+    display: flex;
+  border-radius: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+  position: absolute;
+  background: #d8e1cb;
+  font-family: montra;
+  font-weight: 300;
+}
+.detilas h1{
+    font-size: 2vh;
+}
+.page4 {
+  min-height: 40vh;
+  width: 100%;
+  margin: 5vw 0;
+  display: flex;
+  padding: 1vw;
+  justify-content: space-around;
+}
+.page4 h1 {
+  font-size: 4vw;
+
+  font-family: fantasy;
+  font-weight: 200;
+  line-height: 4vw;
+  letter-spacing: 4px;
+  width: 67%;
+}
+.page4 .rightside {
+  width: 48%;
+}
+.page4 p {
+  font-size: 1.2vw;
+  font-family: montra;
+  font-weight: 400;
+  display: inline-block;
+}
+.rightside .pchl {
+  margin: 2vw 0;
+}
+.page5 {
+  min-height: 120vh;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.page5 h1 {
+  font-size: 1.9vh;
+  font-weight: 300;
+  font-family: montra;
+  text-align: center;
+}
+.child {
+  height: 60vh;
+  width: 38vw;
+  margin: 9vh 0;
+}
+.child img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page6 {
+  height: 110vh;
+  width: 100%;
+}
+.fotter {
+  display: flex;
+}
+.page6 .enter {
+  font-family: Futura;
+  font-size: 6vh;
+}
+.fotter {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page6 .sidefoter {
+  height: 90%;
+  font-family: montra;
+  padding: 4vh 2.5vh;
+  width: 15%;
+  font-weight: 300;
+}
+.sidefoter h1 {
+  font-size: 2vh;
+  margin-bottom: 2vh;
+}
+.sidefoter h2 {
+  font-size: 1.7vh;
+  padding: 0.3vh 0;
+}
+.side2 {
+  text-align: right;
+  padding: 0.3vh 0.4vh;
+}
+.mainfoter {
+  width: 80%;
+  height: 100%;
+  font-family: montra;
+  text-align: center;
+  font-size: 2vh;
+  padding: 8vh 0;
+}
+.mainfoter div {
+  margin-bottom: 8vh;
+}
+.mainfoter span {
+  margin: 80vh 5px;
+  padding: 30px;
+  font-size: 1.9vh;
+}
+.mainfoter p {
+  margin: 13vh 0;
+  font-size: 1.9vh;
+}
+@media (max-width: 600px) {
+    .nav .navpart1{
+        padding: 8px;
+    }
+  .icon {
+    padding: 2vw 6vw;
+    height: 4vh;
+    width: 14vh;
+    font-size: 3.9vw;
+
+    gap: 5vw;
+  }
+  .page1 {
+    padding-left: 0;
+    padding-right: 0;
+    height: 50%;
+  }
+  .page1 h1 {
+    font-size: 6.5vh;
+  }
+  .page3 {
+    height: 10vh;
+    width: 100%;
+  }
+  .page3 img {
+    height: 50%;
+    width: 100%;
+  }
+  .page2 {
+    height: 300vh;
+    flex-direction: column;
+  }
+  .page2 .elem1{
+    padding: 10px 10px;
+    border: none;
+
+  }
+  .detilas h1{
+    font-size: 1.3vh;
+}
+  .page4 {
+    flex-direction: column;
+    z-index: 999;
+    margin: 0;
+    height: 40vh;
+  }
+  .leftside h1 {
+    line-height: 3.5vh;
+ 
+    font-family: Futura;
+    width: 100%;
+    padding-top: 0;
+    font-size: 2vh;
+    letter-spacing: 1px;
+  }
+  .leftside {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+  }
+  .page4 .rightside {
+    width: 100%;
+  }
+  .rightside {
+    width: 100%;
+    height: 50%;
+  }
+  .rightside p,
+  .pchl {
+    text-align: center;
+    font-size: 1.4vh;
+    padding: 0 20px;
+  }
+  .navpart2 .links a {
+    display: none;
+  }
+
+  .page5 {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .child {
+    height: 60vh;
+    width: 38vw;
+  }
+
+  .page5 {
+    min-height: 120vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .child {
+    height: 18vh;
+    width: 45vw;
+    flex-wrap: wrap;
+  }
+  .child h1 {
+    font-size: 1.3vh;
+  }
+  .child img {
+    height: 125%;
+    width: 105%;
+    object-fit: cover;
+  }
+  .mainfoter svg {
+    width: 8vh;
+  }
+
+  .page6 {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .page6 .enter {
+    padding: 0 2.9vh;
+    font-size: 1.9vh;
+    font-weight: 400;
+    width: 60%;
+  }
+  .fotter {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .page6 .sidefoter {
+    height: 60%;
+    font-family: montra;
+    width: 100%;
+  }
+  .sidefoter h1 {
+    font-size: 1.5vh;
+    margin-bottom: 2vh;
+  }
+  .sidefoter h2 {
+    font-size: 1.4vh;
+    padding: 0.3vh 0;
+  }
+  .side2 {
+    text-align: left;
+    padding: 0.3vh 0.4vh;
+  }
+  .mainfoter {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 0;
+  }
+  .mainfoter div {
+    margin-bottom: 0;
+  }
+  .mainfoter span {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3vh;
+  }
+  .mainfoter p {
+    padding: 5px 2vh;
+    margin: 1vh 0;
+    font-size: 1.1vh;
+  }
+}
